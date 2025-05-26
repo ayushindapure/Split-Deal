@@ -119,6 +119,15 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/api/student", (req, res) => {
+  console.log("/api/student called");
+  res.json({
+    name: "Ayush Indapure",
+    studentId: "224880003"
+  });
+});
+
+
 // Start the server using `server` (not app)
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
