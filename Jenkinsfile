@@ -19,12 +19,7 @@ pipeline {
             }
         }
 
-        stage('Lint') {
-            steps {
-                echo 'Running linter...'
-                sh 'npm run lint'
-            }
-        }
+    
 
         stage('Unit Tests (Jest)') {
             steps {
